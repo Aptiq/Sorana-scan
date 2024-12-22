@@ -1,16 +1,24 @@
+import { Form } from "./components/ui/form";
+
 export const SiteConfig = {
-  title: "Now.ts",
-  description: "A template description for Now.ts",
-  prodUrl: "https://demo.nowts.app",
-  domain: "nowts.app",
+  title: "Sorana-scan",
+  description: "Make easy materials analysis using your smartphone",
+  prodUrl: "https://scan.sorana.ch",
+  domain: "scan.sorana.ch",
   appIcon: "/images/icon.png",
   company: {
-    name: "NowTS Inc.",
+    name: "Sorana, LLC",
     address: "1234 Main St, New York, NY 10001",
   },
   brand: {
     primary: "#007291",
   },
+
+  email: {
+    Form : "Sorana <joey.montani@aptiq.ch>",
+    contact: "joey.montani@aptiq.ch",
+  },  
+
   maker: {
     image: "https://melvynx.com/images/me/twitter-en.jpg",
     website: "https://melvynx.com",

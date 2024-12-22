@@ -1,9 +1,7 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider        = "prisma-client-js"
   previewFeatures = ["prismaSchemaFolder"]
+  schemaPath      = "./schema"
 }
 
 datasource db {
@@ -13,35 +11,30 @@ datasource db {
 }
 
 model User {
-  id              String    @id @default(nanoid(11))
+  id              String                   @id @default(nanoid(11))
   name            String?
-  email           String    @unique
+  email           String                   @unique
   emailVerified   DateTime?
   image           String?
-  // Resend email
   resendContactId String?
-  // For the Credentials provider
   passwordHash    String?
-
-  sessions      Session[]
-  accounts      Account[]
-  feedbacks     Feedback[]
-  organizations OrganizationMembership[]
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  createdAt       DateTime                 @default(now())
+  updatedAt       DateTime                 @updatedAt
+  accounts        Account[]
+  feedbacks       Feedback[]
+  organizations   OrganizationMembership[]
+  sessions        Session[]
 }
 
 model Feedback {
-  id      String  @id @default(nanoid(11))
-  review  Int
-  message String
-  email   String?
-  userId  String?
-  user    User?   @relation(fields: [userId], references: [id], onDelete: SetNull)
-
+  id        String   @id @default(nanoid(11))
+  review    Int
+  message   String
+  email     String?
+  userId    String?
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  user      User?    @relation(fields: [userId], references: [id])
 }
 
 enum UserPlan {
