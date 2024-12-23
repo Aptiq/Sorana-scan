@@ -78,7 +78,7 @@ export const editPasswordAction = authAction
     }
 
     if (
-      hashStringWithSalt(input.currentPassword, env.NEXTAUTH_SECRET) !==
+      hashStringWithSalt(input.currentPassword, env.AUTH_SECRET) !==
       passwordHash
     ) {
       throw new ActionError("Invalid current password");
@@ -97,7 +97,7 @@ export const editPasswordAction = authAction
       data: {
         passwordHash: hashStringWithSalt(
           input.newPassword,
-          env.NEXTAUTH_SECRET,
+          env.AUTH_SECRET,
         ),
       },
       select: {
