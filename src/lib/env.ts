@@ -20,6 +20,7 @@ export const env = createEnv({
     NODE_ENV: z.enum(["development", "production", "test"]),
     STRIPE_WEBHOOK_SECRET: z.string().optional(),
     AUTH_SECRET: z.string().min(1),
+    NEXTAUTH_SECRET: z.string().min(1),
   },
   /**
    * If you add `client` environment variables, you need to add them to
