@@ -25,7 +25,7 @@ export const { handlers, auth: baseAuth } = NextAuth((req) => ({
   session: {
     strategy: "database",
   },
-  secret: env.AUTH_SECRET,
+  secret: env.NEXTAUTH_SECRET,
   callbacks: {
     session: (params) => {
       // @ts-expect-error - NextAuth doesn't know about this property
