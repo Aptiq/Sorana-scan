@@ -12,6 +12,7 @@ import {
   TriangleAlert,
   User,
   User2,
+  LayoutGrid,
 } from "lucide-react";
 
 const replaceSlug = (href: string, slug: string) => {
@@ -52,6 +53,11 @@ export const ORGANIZATION_LINKS: NavigationGroup[] = [
         href: ORGANIZATION_PATH,
         Icon: Home,
         label: "Dashboard",
+      },
+      {
+        href: `${ORGANIZATION_PATH}/materials`,
+        Icon: LayoutGrid,
+        label: "Materials",
       },
       {
         href: `${ORGANIZATION_PATH}/users`,

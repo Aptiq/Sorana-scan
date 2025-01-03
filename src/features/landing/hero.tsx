@@ -17,9 +17,9 @@ export const Hero = () => {
               variant="h1"
               className="text-balance text-5xl font-semibold tracking-tight sm:text-7xl lg:text-7xl"
             >
-              Write the best content and Grow your{" "}
+              Make easy materials analysis using a{" "}
               <span className="relative inline-block">
-                <span>business</span>
+                <span>smartphone</span>
                 <CircleSvg className="absolute inset-0 fill-primary" />
               </span>
             </Typography>
@@ -27,8 +27,8 @@ export const Hero = () => {
               variant="large"
               className="mt-8 text-pretty text-lg font-medium text-muted-foreground sm:text-xl/8"
             >
-              Build for Thread, create, schedule and publish your content to
-              your account with AI.
+              Transform your smartphone into a portable materials analysis lab. 
+              Quick, accurate, and accessible material testing anywhere, anytime.
             </Typography>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <ShimmerButton

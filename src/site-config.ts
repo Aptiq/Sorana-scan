@@ -3,8 +3,8 @@ import { Form } from "./components/ui/form";
 export const SiteConfig = {
   title: "Sorana-scan",
   description: "Make easy materials analysis using your smartphone",
-  prodUrl: "https://scan.sorana.ch",
-  domain: "scan.sorana.ch",
+  prodUrl: "https://sorana-scan.vercel.app/",
+  domain: "sorana-scan.vercel.app",
   appIcon: "/images/icon.png",
   company: {
     name: "Sorana, LLC",
