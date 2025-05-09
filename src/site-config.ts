@@ -1,14 +1,14 @@
 import { Form } from "./components/ui/form";
 
 export const SiteConfig = {
-  title: "Sorana-scan",
-  description: "Make easy materials analysis using your smartphone",
+  title: "Sorana",
+  description: "L'administratif simplement",
   prodUrl: "https://sorana-scan.vercel.app/",
   domain: "sorana-scan.vercel.app",
   appIcon: "/images/icon.png",
   company: {
-    name: "Sorana, LLC",
-    address: "1234 Main St, New York, NY 10001",
+    name: "Lorem Consulting Sàrl",
+    address: "Vers l'Ouest 2, 2605 Sonceboz",
   },
   brand: {
     primary: "#007291",
@@ -21,9 +21,9 @@ export const SiteConfig = {
 
   maker: {
     image: "https://melvynx.com/images/me/twitter-en.jpg",
-    website: "https://melvynx.com",
-    twitter: "https://twitter.com/melvyn_me",
-    name: "Melvynx",
+    website: "https://aptiq.ch",
+    twitter: "https://twitter.com/Aptiq_3D",
+    name: "Joey Montani",
   },
   features: {
     /**
